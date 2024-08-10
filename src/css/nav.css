@@ -1,0 +1,48 @@
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.nav-item,.nav-link{
+  color: #ffffff !important;
+}
+a:-webkit-any-link{
+  text-decoration: none;
+}
+.navbar{
+  position: sticky !important;
+  padding: 20px 0px;
+}
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  width: 100%;
+  padding-right: 40px; /* Adjust to make space for the icon */
+}
+
+.search-btn {
+  position: absolute;
+  right: 10px; /* Adjust as needed */
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent; /* Make button background transparent */
+  border: none; /* Remove button border */
+  cursor: pointer;
+}
+
+.search-btn:focus {
+  outline: none; /* Remove focus outline */
+}
+@media (min-width: 3840px) {
+  .navbar {
+      max-width: 90%; /* Adjust the max-width as needed */
+      margin: 0 auto; /* Center the navbar */
+      padding: 0 20px; /* Optional: Add padding to the sides */
+  }
+
+  .navbar-nav .nav-item {
+      margin-left: 15px; /* Optional: Increase spacing between nav items */
+  }
+}

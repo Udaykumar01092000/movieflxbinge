@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.intialcontainer {
+    padding: 20px;
+    margin-top: 20px;
+} 
+.intialdetailsposter{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.card:hover .item_play {
+    opacity: 1;
+    transform: scale(1);
+  }
+  .item_play {
+    transition: opacity 0.4s ease, transform 0.4s ease;
+  }
+.item_play {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    opacity: 0.6;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    bottom: 50%;
+    right: 50%;
+    margin: -30px 0 0 -30px;
+    z-index: 3;
+    font-size: 24px;
+    color: #ff5722;
+    border: 5px solid #ff5722 !important;
+    transition: 0.4s ease;
+    transform: scale(0.9);
+    opacity: 0;
+    border: 6px solid rgba(255, 255, 255, 0.15);
+  }
+.intial.btn.btn-primary{
+    background-color: #ff5722 !important; 
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+.trailerbtn{
+    background-color: #ff5722 !important; 
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ffffff;
+}
+.trailerbtn:hover{
+    background-color: #ffffff !important; 
+    border: 2px solid #ff5722;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ff5722;
+}
+
+.intial.btn.btn-primary:hover {
+    background-color: #e64a19;
+}
+
+.intial.movie-title {
+    color: #ff5722; 
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+.rating-circle {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    border-radius: 50%;
+    background: #ff5722 !important;
+    border: 2px solid #ff5722; /* Border color */
+    color: #ffffff; /* Rating color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px; /* Adjust size as needed */
+    font-weight: bold;
+  }
+  
+.intial.movie-details {
+    color: #ddd; 
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .intialcontainer  {
+        padding: 15px;
+    }
+    img.intial.card-img-top{
+        width: 100% !important;
+    }
+    .col-md-4{
+        padding: 0;
+    }
+    .col-md-4 img {
+        width: 98%;
+        height: 300px;
+        margin: 0px 5px 15px 5px;
+        object-fit: contain;
+    }
+    .intial.movie-title  {
+        font-size: 1.5rem;
+    }
+    
+    .intial.btn-primary {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}

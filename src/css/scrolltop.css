@@ -1,0 +1,42 @@
+/* Scroll to Top Button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #ff5722; /* Background color */
+    color: white; /* Icon color */
+    border: none;
+    border-radius: 50%; /* Makes the button circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 24px; /* Icon size */
+    z-index: 1;
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+  }
+i.fa.fa-arrow-up {
+    color: #ffffff;
+    background: none;
+}
+i.fa.fa-arrow-up:hover{
+    color: #ff5722!important;
+}
+.scroll-to-top:hover {
+    background-color: white; /* Background color on hover */
+    color: #ff5722;
+    border: 2px solid #ff5722; /* Border color on hover */
+}
+  
+.scroll-to-top:focus {
+    outline: none; /* Remove default outline */
+}
+@media (max-width: 768px){
+    .scroll-to-top{
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+    }
+}

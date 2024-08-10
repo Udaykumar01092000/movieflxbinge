@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.embed-responsive-item{
+    width: 100%;
+    height: 400px;
+}
+.btn-back{
+    background-color:#ff5722;
+    color: #ffffff;
+}
+.btn-back:hover{
+    border: 2px solid #ff5722;
+    color: #ff5722;
+}

@@ -1,0 +1,36 @@
+.carousel-item img {
+    object-fit: cover;
+    height: 500px; /* Adjust height as needed */
+  }
+  
+  /* Center caption text */
+  .carousel-caption {
+    bottom: 20px; /* Adjust the position of caption */
+    text-align: center; /* Center the caption text */
+  }
+  
+  /* Style the caption heading */
+  .carousel-caption h5 {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+  }
+  
+  /* Remove navigation arrows */
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: block; /* Hide the arrows */
+
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .carousel-caption h5 {
+      font-size: 16px;
+    }
+    .carousel-item img {
+      height: 300px; /* Adjust height for smaller screens */
+    }
+  }
+  
