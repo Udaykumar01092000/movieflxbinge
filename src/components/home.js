@@ -4,7 +4,6 @@ import { Link} from 'react-router-dom';
 import Navbar from './nav';
 import '../css/home.css';
 import ScrollToTop from './scrolltop';
-import video from './video.mp4';
 import HomeSlider from './homeslider';
 
 function Home() {
