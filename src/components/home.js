@@ -4,6 +4,8 @@ import { Link} from 'react-router-dom';
 import Navbar from './nav';
 import '../css/home.css';
 import ScrollToTop from './scrolltop';
+import video from './video.mp4';
+import HomeSlider from './homeslider';
 
 function Home() {
     const topRatedRef = useRef(null);
@@ -79,6 +81,7 @@ function Home() {
     return (
         <div>
             <Navbar />
+            <HomeSlider/>
             <div className='homeslide-container'>
                 <div className='homeslide-row'>
                     <div className='homeslide-col-10'>
@@ -130,7 +133,6 @@ function Home() {
                     </div>
                 </div>
             </div>
-
             <div className='homeslide-container'>
                 <div className='homeslide-row'>
                     <div className='homeslide-col-10'>
@@ -176,14 +178,14 @@ function Home() {
                             </div>
                         ))}
                     </div>
-                </div>
-                <div className='contanter'>
+                    <div className='contanter'>
                         <div className='row'>
                             <Link to = "/upcomingmovies" className='viewall'>
                                 View All
                             </Link>
                         </div>
                     </div>
+                </div>   
             </div>
 
             <div className='homeslide-container'>
@@ -229,14 +231,14 @@ function Home() {
                             </div>
                         ))}
                     </div>
-                </div>
-                <div className='contanter'>
+                    <div className='contanter'>
                         <div className='row'>
                             <Link to = "/tvshows" className='viewall'>
                                 View All
                             </Link>
                         </div>
                     </div>
+                </div>
             </div>
             <ScrollToTop />
         </div>
